@@ -8,6 +8,7 @@ namespace LandonApi.Controllers
 {
     [Route("/")]
     [ApiController]
+    [ApiVersion("1.0")]
     public class RootController: ControllerBase
     {
         [HttpGet(Name = nameof(GetRoot))]
