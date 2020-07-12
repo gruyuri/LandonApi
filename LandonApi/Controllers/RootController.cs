@@ -18,8 +18,8 @@ namespace LandonApi.Controllers
         {
             var response = new
             {
-                Href = Url.Link(nameof(GetRoot), null),
-                Rooms = Link.To(nameof(RoomsController.GetRooms)),
+                Href = Link.To(nameof(GetRoot)),
+                Rooms = Link.ToCollection(nameof(RoomsController.GetAllRooms)),
                 Info = Link.To(nameof(InfoController.GetInfo))
             };
 
